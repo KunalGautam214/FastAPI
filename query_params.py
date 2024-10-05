@@ -43,7 +43,7 @@ async def items_optional(item_id, page: int | None = 0,
 async def items_optional(item_id, page: int | None = 0,
                          size: int | None = 10,
                          short: bool | None = False):
-    items = fake_db_list[(page*size)+page:(page+1)*size]
+    items = fake_db_list[page:page+size]
     items_dict = {'items': items}
     if item_id:
         items_dict.update({'item_id': item_id})
