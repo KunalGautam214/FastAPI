@@ -3,3 +3,4 @@ pydantic[email]
 pyjwt
 passlib[bcrypt]
 sqlmodel
+requests
