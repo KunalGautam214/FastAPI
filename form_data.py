@@ -12,8 +12,7 @@ class UserDataForm(BaseModel):
 
 
 @app.post('/user')
-async def create_user(username: Annotated[str, Form()],
-                      passowrd: Annotated[str, Form()]):
+async def create_user(username: Annotated[str, Form()]):
     return {'username': username}
 
 
