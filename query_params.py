@@ -54,3 +54,9 @@ async def items_optional(item_id, page: int | None = 0,
     if short:
         items_dict.update({'short': short})
     return items_dict
+
+
+import uvicorn
+
+if __name__ == '__main__':
+    uvicorn.run(app, host='localhost', port=8001)
